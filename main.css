@@ -1,0 +1,410 @@
+/* == BASIC STYLES === */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
+body {
+  width: 30%;
+  height: 100%;
+  margin: auto;
+  color: #444349;
+}
+
+h1, h2, p:last-child {
+  padding-bottom: 1rem;
+}
+
+h1 {
+  font-family: 'Great Vibes';
+}
+
+h2 {
+  font-family: 'Libre Baskerville';
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+
+p {
+  font-family: 'Muli';
+}
+
+.rings, .camera, .cake, .gift-box {
+  width: 50%;
+  padding-bottom: 1rem;
+}
+
+
+
+
+/* === HEADER STYLES === */
+
+.cover {
+  background-image: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg");
+  height: 100%;
+  background-position: 70% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: table;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+.wrapper {
+  margin-top: 50%;
+  width: 100%;
+  margin-bottom: 20%;
+  background-color: rgb(0, 0, 0, .4);
+  border: 0.1px solid rgb(0, 0, 0, .4);
+  vertical-align: middle;
+}
+
+.wrapper > hr {
+  width: 50%;
+  border: 0.46px solid rgb(250, 250, 250);
+}
+
+.wrapper > h1 {
+  color: #d2ba87;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.wrapper > h2 {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+
+.date {
+  vertical-align: middle;
+}
+
+
+
+.date::before, .date::after {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  background-color: rgb(250, 250, 250);
+  height: 1px;
+  width: 1rem;
+  margin: 0.5rem;
+}
+
+
+
+
+
+/*=== MAIN CONTENT STYLES ===*/
+
+.main-content {
+  font-size: 0.4rem;
+}
+
+
+.locations, .program, .gifts, .questions, .contact, .footer {
+  padding-top: 1rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  padding-bottom: 1rem;
+}
+
+.blurb {
+  padding-top: 0.5rem;
+}
+
+.locations, .gifts, .contact {
+  text-align: center;
+  background-image: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.locations > h1, .program > h1, .gifts > h1, .questions > h1, .contact > h1 {
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.program, .questions > h1 {
+  padding-bottom: 0;
+}
+
+
+.blurb > p:last-child, .question-group > p:last-child  {
+  padding-bottom: 0.5rem;
+}
+
+.gifts > p {
+font-family: 'Libre Baskerville';
+  padding-bottom: 1rem;
+}
+
+.main-content > .locations, .gifts {
+  color: #444349;
+}
+
+.main-content > .program, .questions {
+  color: #d2ba87;
+}
+
+.program, .questions, .footer {
+  background-color: #606060;
+}
+
+h3 {
+  font-family: 'Libre Baskerville';
+  font-size: 0.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+
+
+.odd {
+  font-weight: bold;
+}
+
+.flex-box > hr {
+  width: 40%;
+  border: 0.5px solid #444349;
+}
+
+.program > ul {
+  padding-bottom: 1rem;
+}
+
+.even {
+  padding-top: 0.22rem;
+  padding-bottom: 1rem;
+}
+
+
+
+.gifts > p:last-child, .contact > p:last-child, .footer > p:last-child {
+  padding-bottom: 0;
+}
+
+p {
+  line-height: 0.7rem;
+}
+
+
+.question-group > hr {
+  width: 60%;
+  border: 0.5px solid rgb(210, 186, 135);
+  color: #d2ba87;
+}
+
+
+/* === FOOTER STYLES === */
+
+.footer {
+  background-color: #606060;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+ color: #eda087;
+}
+
+
+
+/* === MEDIA QUERIES === */
+
+
+
+@media (max-width: 370px) {
+
+  .date::before, .date::after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    background-color: rgb(250, 250, 250);
+    height: 1px;
+    width: 0.5rem;
+    margin: 0.3rem;
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+
+  body {
+    width: 100%;
+  }
+
+  /* header */
+
+  .cover {
+  background-image: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: table;
+  color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+  .wrapper {
+    margin-top: 18%;
+    width: 50%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 0, 0, .4);
+    border: 0.1px solid rgb(0, 0, 0, .4);
+    font-size: 1.2rem;
+  }
+
+  .wrapper > h1 {
+    color: #d2ba87;
+    font-size: 6rem;
+    font-weight: normal;
+  }
+
+  .wrapper > h2 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .date {
+    font-weight: normal;
+  }
+
+  .date::before, .date::after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    background-color: rgb(250, 250, 250);
+    height: 1px;
+    width: 1.2rem;
+    margin: 0.8rem;
+  }
+
+  /* main content */
+
+
+  .gift-box {
+    width: 10%;
+    padding-bottom: 1.5rem;
+  }
+
+  .main-content {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+
+  .flex-box, .flex-questions {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+   .blurb {
+    width: 100%;
+  }
+  
+  .flex-box > .blurb:first-child {
+    padding-left: 12%;
+  }
+  
+  .flex-box > .blurb:last-child {
+    padding-right: 12%;
+  }
+
+
+  .locations, .program, .gifts, .questions, .contact {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+  
+  .questions {
+    padding-bottom: 0;
+  }
+
+  .program > p, .gifts > p:last-child {
+    padding-bottom: 1.5rem;
+  }
+
+  .locations > h1, .program > h1, .gifts > h1, .questions > h1, .contact > h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  p, ul {
+    line-height: 1.7rem;
+  }
+
+  .flex-box > hr, .question-group > hr {
+    visibility: hidden;
+  }
+
+  .program  > h1, .program > p, .contact > p {
+    text-align: center;
+  }
+
+  ul {
+    margin-left: 33.3%;
+    font-size: 1.2rem;
+  }
+
+   .question-group {
+    width: 90%;
+    vertical-align: top;
+    line-height: 1.7rem;
+    padding: 1rem;
+  }
+
+  .question-group > h3 {
+    text-align: left;
+    padding-bottom: 1.8rem;
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+
+  .question-group > p, .blurb > p {
+    font-size: 1.1rem;
+  }
+
+   .even {
+    padding-bottom: 1.5rem;
+  }
+}
+
